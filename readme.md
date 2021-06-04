@@ -7,4 +7,4 @@ Deprecated:
 * `/js`
 
 Todo:
-[] Center tab labels
+* Center tab labels
