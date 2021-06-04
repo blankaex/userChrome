@@ -27,9 +27,13 @@
     display: none !important;
 }
 
-/* disable overflow fade & set width*/
+/* disable overflow fade */
 .tabbrowser-tab {
     --tab-label-mask-size: 0 !important;
+}
+
+/* set tab max width */
+.tabbrowser-tab[fadein]:not([pinned]) {
     max-width: 250px !important;
 }
 
