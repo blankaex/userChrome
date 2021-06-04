@@ -1,0 +1,23 @@
+@import url("css/anichart.css");
+@import url("css/jisho.css");
+@import url("css/shadowverse-portal.css");
+@import url("css/sourcehut.css");
+@import url("css/tweetdeck.css");
+@import url("css/vndb.css");
+@import url("css/wikia.css");
+@import url("css/wikipedia.css");
+
+:root
+{
+  scrollbar-width: none !important
+}
+
+*
+{
+  --cue-font-size: Source Han Sans JP;
+}
+
+*|*
+{
+  scrollbar-width: none !important
+}

@@ -1,0 +1,5 @@
+@-moz-document domain("shadowverse-portal.com"){
+
+.deckbuilder-deck-list .deckbuilder-deck-cards .deckbuilder-deck-cards-list {
+max-height: 800px !important;
+}
