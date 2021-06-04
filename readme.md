@@ -1,6 +1,6 @@
 # Firefox CSS
 
-Drop into `$HOME/.mozilla/firefox/[profile]/chrome`.
+Drop into `$HOME/.mozilla/firefox/[profile]/chrome`. Pywal colour scheme from [dotfiles](https://github.com/blankaex/dotfiles).
 
 Deprecated:
 * `userChrome.xml`
@@ -8,3 +8,4 @@ Deprecated:
 
 Todo:
 * Center tab labels
+
