@@ -34,7 +34,7 @@
 
 /* set tab max width */
 .tabbrowser-tab[fadein]:not([pinned]) {
-    max-width: 250px !important;
+    max-width: 300px !important;
 }
 
 /* disable flashing lights and border */
