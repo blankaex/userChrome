@@ -27,9 +27,10 @@
     display: none !important;
 }
 
-/* disable overflow fade */
+/* disable overflow fade & set width*/
 .tabbrowser-tab {
     --tab-label-mask-size: 0 !important;
+    max-width: 250px !important;
 }
 
 /* disable flashing lights and border */
@@ -75,9 +76,9 @@
     text-align: center !important;
 }
 
-/* focus outline colour */
-:root:-moz-lwtheme-brighttext {
-    --focus-outline-color: var(--color11) !important;
+/* hostname in suggestions styling */
+:root[lwt-toolbar-field-focus-brighttext] {
+    --lwt-popup-brighttext-url-color: var(--color6);
 }
 
 
