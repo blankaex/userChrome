@@ -82,7 +82,7 @@
 
 /* hostname in suggestions styling */
 :root[lwt-toolbar-field-focus-brighttext] {
-    --lwt-popup-brighttext-url-color: var(--color6);
+    --lwt-popup-brighttext-url-color: var(--color6) !important;
 }
 
 
