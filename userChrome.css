@@ -17,6 +17,11 @@
     }
 }
 
+/* (partially) fix white flash when opening new tab */
+#tabbrowser-tabpanels {
+    background-color: var(--background) !important;
+}
+
 
 /*
  *  tab styling
@@ -46,6 +51,13 @@
 /* set tab label font size */
 .tab-text {
     font-size: 0.85em !important;
+}
+
+/* centered tab labels */
+.tab-content:not([pinned])::before {
+    display: -moz-box;
+    -moz-box-flex: 1;
+    content: ""; /* I don't know what this does either but it doesn't work without it*/
 }
 
 /* connect tabs to toolbar */
