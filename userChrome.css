@@ -123,7 +123,7 @@
 
 /* reset background when focused so search suggestions have a background */
 :root:not([customizing]) #navigator-toolbox:focus-within #urlbar-background {
-    background-color: var(--background) !important;
+    background-color: #2d2d2d !important;
 }
 
 /* buttons hidden by default */
