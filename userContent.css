@@ -7,12 +7,7 @@
 @import url("css/wikia.css");
 @import url("css/wikipedia.css");
 
-:root
-{
-  scrollbar-width: none !important
-}
-
-*|*
-{
-  scrollbar-width: none !important
+/* hide scrollbars everywhere */
+:root, *|* {
+    scrollbar-width: none !important
 }
