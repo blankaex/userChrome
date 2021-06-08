@@ -32,7 +32,7 @@
     display: none !important;
 }
 
-/* remove gab between pinned and unpinned tabs */
+/* remove gap between pinned and unpinned tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
     margin-inline-start: 0px !important;
 }
