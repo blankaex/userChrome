@@ -78,7 +78,7 @@
 /* button cleanup */
 #tabs-newtab-button, #new-tab-button, /* new tab button */
 #scrollbutton-up, #scrollbutton-down, /* tab scroll buttons */
-#back-button, #forward-button, /* back and forward buttons */
+#forward-button, /* forward buttons */
 #tracking-protection-icon-container, /* tracking protection icon */
 #identity-box, /* ssl icon */
 #star-button-box, /* bookmark icon */
