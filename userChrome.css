@@ -83,8 +83,15 @@
 #identity-box, /* ssl icon */
 #star-button-box, /* bookmark icon */
 #urlbar-go-button, /* url bar go button */
+#PanelUI-button, /* settings panel button */
 #pageActionButton, #pageActionSeparator /* separators */ {
     display: none !important;
+}
+
+
+/* keep it symmetrical */
+#nav-bar-overflow-button {
+    margin-right: 5px !important;
 }
 
 
