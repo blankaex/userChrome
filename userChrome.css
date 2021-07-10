@@ -11,10 +11,8 @@
 }
 
 /* disable fullscreen warning */
-@-moz-document url(chrome://browser/content/browser.xul) {
-    #fullscreen-warning {
-        display: none !important;
-    }
+#fullscreen-warning {
+    display: none !important;
 }
 
 /* (partially) fix white flash when opening new tab */
