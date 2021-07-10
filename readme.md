@@ -7,10 +7,13 @@ Pywal colour scheme from [dotfiles](https://github.com/blankaex/dotfiles). See a
 ## Preview
 
 Default
+
 ![preview default](preview/preview1.png)
 
-Toolbar hover
+Hover urlbar
+
 ![preview hover](preview/preview2.png)
 
-Urlbar focus
+Focus urlbar
+
 ![preview focus](preview/preview3.png)
