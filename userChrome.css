@@ -107,6 +107,12 @@
     --lwt-popup-brighttext-url-color: var(--color6) !important;
 }
 
+/* highlighted suggestion styling */
+.urlbarView-row[aria-selected="true"] {
+    --autocomplete-popup-highlight-background: var(--color6) !important;
+    --lwt-popup-brighttext-url-color: var(--foreground) !important;
+}
+
 
 /*
  * stealth mode
