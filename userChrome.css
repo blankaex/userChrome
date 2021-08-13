@@ -56,6 +56,11 @@
     font-size: 0.85em !important;
 }
 
+/* highlight focused tab */
+.tab-background[selected="true"] {
+    border-top: 2px solid var(--color3) !important;
+}
+
 /* centered tab labels */
 .tab-content:not([pinned])::before {
     display: -moz-box;
