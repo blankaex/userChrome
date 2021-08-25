@@ -53,7 +53,7 @@
 
 /* set tab label font size */
 .tab-text {
-    font-size: 0.85em !important;
+    font-size: 1em !important;
 }
 
 /* highlight focused tab */
@@ -87,10 +87,18 @@
 #star-button-box, /* bookmark icon */
 #urlbar-go-button, /* url bar go button */
 #PanelUI-button, /* settings panel button */
-#pageActionButton, #pageActionSeparator /* separators */ {
+#pageActionButton, #pageActionSeparator, toolbarseparator /* separators */ {
     display: none !important;
 }
 
+
+/* extension overflow menu width fix */
+panelview, panelmultiview, .PanelUI-subView { 
+    min-width: 460px !important;
+}
+.toolbarbutton-1 {
+    max-width: none !important;
+}
 
 /* keep it symmetrical */
 #nav-bar-overflow-button {
@@ -126,14 +134,14 @@
 /* default navbar styling */
 #nav-bar #urlbar {
     opacity: 50% !important;
-    font-size: 0.85em !important;
+    font-size: 1em !important;
     transition: all 100ms var(--animation-easing-function) !important;
 }
 
 /* expand navbar on hover */
 :root:not([customizing]) #navigator-toolbox:focus-within #nav-bar #urlbar {
     opacity: 100% !important;
-    font-size: 1.00em !important;
+    font-size: 1.2em !important;
 }
 
 /* blend urlbar into toolbar by default */
