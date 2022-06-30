@@ -45,10 +45,15 @@
     max-width: 300px !important;
 }
 
-/* disable flashing lights and border */
+/* disable flashing lights */
 #tabbrowser-tabs {
     --tab-loading-fill: transparent !important;
     --tab-line-color: transparent !important;
+}
+
+/* disable border lights */
+#TabsToolbar {
+    --lwt-tab-line-color: transparent !important;
 }
 
 /* set tab label font size */
