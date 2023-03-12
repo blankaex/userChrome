@@ -67,8 +67,19 @@
 }
 
 /* highlight focused tab */
-.tab-background[selected="true"] {
+.tab-background:is([selected]) {
     border-top: 2px solid var(--color3) !important;
+}
+
+/* focused tab background colour */
+#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon, .tab-background:is([selected], [multiselected]) {
+    background-color: var(--background) !important;
+}
+
+/* unocused tab background colour */
+#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon, .tab-background:not([selected]) {
+    background-color: var(--background) !important;
+    filter: brightness(180%) !important;
 }
 
 /* centered tab labels */
@@ -78,9 +89,14 @@
     content: ""; /* I don't know what this does either but it doesn't work without it*/
 }
 
-/* connect tabs to toolbar */
+/* spacing between and below tabs */
 .tabbrowser-tab {
-    margin-bottom: -4px !important;
+    margin: 0px -1px -4px -1px !important;
+}
+
+/* tab rounding */
+.tab-background {
+    border-radius: 3px 3px 0px 0px !important;
 }
 
 
@@ -97,17 +113,9 @@
 #star-button-box, /* bookmark icon */
 #urlbar-go-button, /* url bar go button */
 #PanelUI-button, /* settings panel button */
-#pageActionButton, #pageActionSeparator, toolbarseparator /* separators */ {
+#alltabs-button, /* tab list button */
+#pageActionButton, #pageActionSeparator, #toolbarseparator /* separators */ {
     display: none !important;
-}
-
-
-/* extension overflow menu width fix */
-panelview, panelmultiview, .PanelUI-subView { 
-    min-width: 460px !important;
-}
-.toolbarbutton-1 {
-    max-width: none !important;
 }
 
 /* keep it symmetrical */
@@ -119,6 +127,11 @@ panelview, panelmultiview, .PanelUI-subView {
 /*
  * nav bar styling
  */
+
+/* background color */
+.browser-toolbar:not(.titlebar-color) {
+    background-color: var(--background) !important;
+}
 
 /* center urlbar text */
 #urlbar-input {
@@ -167,11 +180,16 @@ panelview, panelmultiview, .PanelUI-subView {
 
 /* buttons hidden by default */
 :root:not([customizing]) #nav-bar toolbarbutton {
-    margin-left: -36px !important;
     opacity: 0 !important;
     transform: scale(.85, .85) !important;
     pointer-events: none !important;
     transition: all 100ms var(--animation-easing-function) !important;
+}
+:root:not([customizing]) #nav-bar toolbarbutton#back-button {
+    margin-left: -36px !important;
+}
+:root:not([customizing]) #nav-bar toolbarbutton#unified-extensions-button {
+    margin-right: -36px !important;
 }
 
 /* show buttons on hover */
@@ -180,4 +198,10 @@ panelview, panelmultiview, .PanelUI-subView {
     opacity: 1 !important;
     margin-left: 0 !important;
     pointer-events: auto !important;
+}
+:root:not([customizing]) :hover > #nav-bar toolbarbutton#back-button {
+    margin-left: 0 !important;
+}
+:root:not([customizing]) :hover > #nav-bar toolbarbutton#unified-extensions-button {
+    margin-right: 0 !important;
 }
