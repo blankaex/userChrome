@@ -76,7 +76,7 @@
     background-color: var(--background) !important;
 }
 
-/* unocused tab background colour */
+/* unfocused tab background colour */
 #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon, .tab-background:not([selected]) {
     background-color: var(--background) !important;
     filter: brightness(180%) !important;
