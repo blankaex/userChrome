@@ -83,10 +83,12 @@
 }
 
 /* centered tab labels */
-.tab-content:not([pinned])::before {
-    display: -moz-box;
-    -moz-box-flex: 1;
-    content: ""; /* I don't know what this does either but it doesn't work without it*/
+.tab-icon-stack{
+    margin-inline-start: auto
+}
+.tab-label-container{
+    max-width: min-content;
+    margin-inline-end: auto;
 }
 
 /* spacing between and below tabs */
