@@ -1,6 +1,6 @@
 # Firefox CSS
 
-Updated for Firefox 110.0.1. Drop into `$HOME/.mozilla/firefox/[profile]/chrome`.
+Updated for Firefox 135.0. Drop into `$HOME/.mozilla/firefox/[profile]/chrome`.
 
 Pywal colour scheme from [dotfiles](https://github.com/blankaex/dotfiles). See also: [firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks).
 
