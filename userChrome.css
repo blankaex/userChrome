@@ -66,6 +66,11 @@
     border: none !important;
 }
 
+/* remove tab outline */
+.tab-background {
+    box-shadow: none !important;
+}
+
 /* highlight focused tab */
 .tab-background:is([selected]) {
     border-top: 2px solid var(--color3) !important;
@@ -116,6 +121,7 @@
 #urlbar-go-button, /* url bar go button */
 #PanelUI-button, /* settings panel button */
 #alltabs-button, /* tab list button */
+#translations-button, /* translate button */
 #pageActionButton, #pageActionSeparator, #toolbarseparator /* separators */ {
     display: none !important;
 }
@@ -129,6 +135,16 @@
 /*
  * nav bar styling
  */
+
+/* remove nav bar border */
+#nav-bar {
+    border-top: none !important;
+}
+
+/* remove toolbox border */
+#navigator-toolbox {
+    border-bottom: none !important;
+}
 
 /* background color */
 .browser-toolbar:not(.titlebar-color) {
