@@ -122,6 +122,7 @@
 #PanelUI-button, /* settings panel button */
 #alltabs-button, /* tab list button */
 #translations-button, /* translate button */
+#picture-in-picture-button, /* pip button */
 #pageActionButton, #pageActionSeparator, #toolbarseparator /* separators */ {
     display: none !important;
 }
