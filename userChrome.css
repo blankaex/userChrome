@@ -73,7 +73,7 @@
 
 /* highlight focused tab */
 .tab-background:is([selected]) {
-    border-top: 2px solid var(--color3) !important;
+    border-top: 2px solid var(--color6) !important;
 }
 
 /* focused tab background colour */
