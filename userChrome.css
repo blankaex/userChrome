@@ -7,7 +7,7 @@
 
 /* set global font */
 * {
-    font-family: Source Han Sans JP !important;
+    font-family: Monospace !important;
 }
 
 /* disable fullscreen warning */
@@ -117,12 +117,14 @@
 #forward-button, /* forward buttons */
 #tracking-protection-icon-container, /* tracking protection icon */
 #identity-box, /* ssl icon */
+#trust-icon-container, /* ssl button */
 #star-button-box, /* bookmark icon */
 #urlbar-go-button, /* url bar go button */
 #PanelUI-button, /* settings panel button */
 #alltabs-button, /* tab list button */
 #translations-button, /* translate button */
 #picture-in-picture-button, /* pip button */
+#urlbar-searchmode-switcher, /* search engine picker */
 #pageActionButton, #pageActionSeparator, #toolbarseparator /* separators */ {
     display: none !important;
 }
