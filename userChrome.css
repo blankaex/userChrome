@@ -116,7 +116,7 @@
 #scrollbutton-up, #scrollbutton-down, /* tab scroll buttons */
 #forward-button, /* forward buttons */
 #tracking-protection-icon-container, /* tracking protection icon */
-#identity-box, /* ssl icon */
+#permissions-granted-icon, #identity-icon-box, #identity-permission-box, /* permissions icons */
 #trust-icon-container, /* ssl button */
 #star-button-box, /* bookmark icon */
 #urlbar-go-button, /* url bar go button */
