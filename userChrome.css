@@ -165,6 +165,11 @@
     }
 }
 
+/* hide dynamic actions in suggestions */
+.urlbarView-row[type="dynamic"] {
+    display: none !important;
+}
+
 /* hostname in suggestions styling */
 :root[lwt-toolbar-field-focus-brighttext] {
     --lwt-popup-brighttext-url-color: var(--color6) !important;
