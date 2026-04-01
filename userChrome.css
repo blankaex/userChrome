@@ -112,6 +112,7 @@
  */
 
 /* button cleanup */
+.urlbar-go-button, /* url go button */
 #tabs-newtab-button, #new-tab-button, /* new tab button */
 #scrollbutton-up, #scrollbutton-down, /* tab scroll buttons */
 #forward-button, /* forward buttons */
@@ -127,11 +128,6 @@
 #urlbar-searchmode-switcher, /* search engine picker */
 #pageActionButton, #pageActionSeparator, #toolbarseparator /* separators */ {
     display: none !important;
-}
-
-/* keep it symmetrical */
-#nav-bar-overflow-button {
-    margin-right: 5px !important;
 }
 
 
@@ -159,6 +155,16 @@
     text-align: center !important;
 }
 
+/* hide firefox suggest separator in suggestions */
+.urlbarView-row[label="Firefox Suggest"] {
+    margin-top: 0px !important;
+}
+.urlbarView-row[label="Firefox Suggest"] {
+    &::before {
+        display: none !important;
+    }
+}
+
 /* hostname in suggestions styling */
 :root[lwt-toolbar-field-focus-brighttext] {
     --lwt-popup-brighttext-url-color: var(--color6) !important;
@@ -170,6 +176,29 @@
     --lwt-popup-brighttext-url-color: var(--foreground) !important;
 }
 
+/* focused url bar border highlight */
+@media not ((forced-colors) or (-moz-native-theme)) {
+    :root:not([lwtheme]) {
+        --color-accent-primary: transparent !important;
+        border: 2px solid var(--color1) !important;
+}
+
+/* link colour in non-focused url suggestions */
+.urlbarView-row:not([selected]) .urlbarView-url { 
+    color: var(--color3) !important; 
+}
+
+/* hide separator above url suggestions */
+.urlbarView-body-inner {
+    #urlbar[open] > .urlbarView > .urlbarView-body-outer > & {
+        border-top: none !important;
+    }
+}
+
+/* fix symmetry on right-side button */
+#unified-extensions-button {
+    padding-right: 10px !important;
+}
 
 /*
  * stealth mode
@@ -189,14 +218,15 @@
 }
 
 /* blend urlbar into toolbar by default */
-#urlbar-background {
+.urlbar-background {
     background-color: transparent !important;
     border: none !important;
 }
 
 /* reset background when focused so search suggestions have a background */
-:root:not([customizing]) #navigator-toolbox:focus-within #urlbar-background {
-    background-color: #2d2d2d !important;
+:root:not([customizing]) #navigator-toolbox:focus-within .urlbar-background {
+    background-color: var(--background) !important;
+    border: 2px solid var(--color1) !important;
 }
 
 /* buttons hidden by default */
