@@ -30,19 +30,9 @@
     display: none !important;
 }
 
-/* remove gap between pinned and unpinned tabs */
-#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
-    margin-inline-start: 0px !important;
-}
-
-/* disable overflow fade */
-.tabbrowser-tab {
-    --tab-label-mask-size: 0 !important;
-}
-
-/* set tab max width */
-.tabbrowser-tab[fadein]:not([pinned]) {
-    max-width: 300px !important;
+/* disable border lights */
+#TabsToolbar {
+    --lwt-tab-line-color: transparent !important;
 }
 
 /* disable flashing lights */
@@ -51,9 +41,21 @@
     --tab-line-color: transparent !important;
 }
 
-/* disable border lights */
-#TabsToolbar {
-    --lwt-tab-line-color: transparent !important;
+/* remove gap between pinned and unpinned tabs */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+    margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab {
+    /* disable overflow fade */
+    --tab-label-mask-size: 0 !important;
+    /* spacing between and below tabs */
+    margin: 0px -1px -4px -1px !important;
+}
+
+/* set tab max width */
+.tabbrowser-tab[fadein]:not([pinned]) {
+    max-width: 300px !important;
 }
 
 /* set tab label font size */
@@ -61,19 +63,22 @@
     font-size: 1em !important;
 }
 
-/* remove tab outline */
 .tab-background {
+    /* remove tab outline */
     border: none !important;
-}
-
-/* remove tab outline */
-.tab-background {
     box-shadow: none !important;
+    /* tab rounding */
+    border-radius: 3px 3px 0px 0px !important;
 }
 
 /* highlight focused tab */
 .tab-background:is([selected]) {
     border-top: 2px solid var(--color6) !important;
+}
+
+/* highlight selected tabs */
+.tabbrowser-tab[aria-selected="true"] .tab-background { 
+    border-top: 2px solid var(--color3) !important;
 }
 
 /* focused tab background colour */
@@ -84,7 +89,7 @@
 /* unfocused tab background colour */
 #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon, .tab-background:not([selected]) {
     background-color: var(--background) !important;
-    filter: brightness(180%) !important;
+    filter: brightness(150%) !important;
 }
 
 /* centered tab labels */
@@ -94,16 +99,6 @@
 .tab-label-container{
     max-width: min-content;
     margin-inline-end: auto;
-}
-
-/* spacing between and below tabs */
-.tabbrowser-tab {
-    margin: 0px -1px -4px -1px !important;
-}
-
-/* tab rounding */
-.tab-background {
-    border-radius: 3px 3px 0px 0px !important;
 }
 
 
@@ -232,6 +227,7 @@
 :root:not([customizing]) #navigator-toolbox:focus-within .urlbar-background {
     background-color: var(--background) !important;
     border: 2px solid var(--color1) !important;
+    filter: brightness(150%) !important;
 }
 
 /* buttons hidden by default */
