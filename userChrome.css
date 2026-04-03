@@ -79,6 +79,7 @@
 /* highlight selected tabs */
 .tabbrowser-tab[aria-selected="true"] .tab-background { 
     border-top: 2px solid var(--color3) !important;
+    filter: brightness(100%) !important;
 }
 
 /* focused tab background colour */
