@@ -201,6 +201,14 @@
     padding-right: 10px !important;
 }
 
+.footer-button {
+    &:not([disabled]) {
+        &[default], &.primary {
+            background-color: var(--color6) !important;
+        }
+    }
+}
+
 /*
  * stealth mode
  */
